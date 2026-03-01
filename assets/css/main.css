@@ -3228,3 +3228,19 @@ input, select, textarea {
     overflow-y: hidden !important;
     -webkit-overflow-scrolling: touch;
 }
+/* ===== FORCE HORIZONTAL SCROLL — SAFE ===== */
+
+.carousel {
+    overflow: hidden; /* keep original behavior */
+}
+
+.carousel .reel {
+    overflow-x: auto !important;
+    overflow-y: hidden !important;
+    -webkit-overflow-scrolling: touch;
+    scroll-behavior: smooth;
+
+    /* IMPORTANT: disable JS transform interference */
+    transform: none !important;
+}
+
