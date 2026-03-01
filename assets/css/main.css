@@ -3155,3 +3155,20 @@ input, select, textarea {
 #navPanelToggle {
 	display: none !important;
 }
+/* Force horizontal swipe scroll */
+.carousel .reel {
+    display: flex !important;
+    overflow-x: auto !important;
+    overflow-y: hidden !important;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    touch-action: pan-x;
+}
+
+.carousel .reel::-webkit-scrollbar {
+    display: none;
+}
+
+.carousel article {
+    flex: 0 0 auto;
+}
