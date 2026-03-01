@@ -3171,6 +3171,41 @@ input, select, textarea {
 .carousel .reel::-webkit-scrollbar {
     height: 0;
 }
+/* ===== DISABLE HELIOS MOBILE MENU ===== */
+
+#titleBar,
+#navPanel,
+#navPanelToggle,
+.navPanelToggle {
+    display: none !important;
+}
+
+/* ===== ENABLE HORIZONTAL SCROLL ONLY FOR GALLERY ===== */
+
+.carousel {
+    overflow: hidden;
+}
+
+.carousel .reel {
+    display: flex;
+    overflow-x: auto;
+    overflow-y: hidden;
+    gap: 1.5rem;
+    padding: 1rem;
+    -webkit-overflow-scrolling: touch;
+    scroll-behavior: smooth;
+}
+
+/* Hide scrollbar */
+.carousel .reel::-webkit-scrollbar {
+    display: none;
+}
+
+/* Keep cards in one row */
+.carousel article {
+    flex: 0 0 auto;
+}
+
 
 /* Make items stay in one row */
 .carousel article {
