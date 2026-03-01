@@ -3151,24 +3151,28 @@ input, select, textarea {
 					}
 
 	}
-/* Remove mobile menu button */
+/* REMOVE mobile menu button (3 dots) */
+#titleBar,
+#navPanel,
+.navPanelToggle,
 #navPanelToggle {
-	display: none !important;
+    display: none !important;
 }
-/* Force horizontal swipe scroll */
+/* Horizontal swipe for gallery ONLY */
 .carousel .reel {
-    display: flex !important;
-    overflow-x: auto !important;
-    overflow-y: hidden !important;
-    scroll-behavior: smooth;
+    display: flex;
+    overflow-x: auto;
+    overflow-y: hidden;
     -webkit-overflow-scrolling: touch;
-    touch-action: pan-x;
+    scroll-behavior: smooth;
 }
 
+/* Hide scrollbar but keep swipe */
 .carousel .reel::-webkit-scrollbar {
-    display: none;
+    height: 0;
 }
 
+/* Make items stay in one row */
 .carousel article {
     flex: 0 0 auto;
 }
