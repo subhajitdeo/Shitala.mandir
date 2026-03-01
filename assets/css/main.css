@@ -3211,3 +3211,20 @@ input, select, textarea {
 .carousel article {
     flex: 0 0 auto;
 }
+/* ===== CUSTOM OVERRIDE ===== */
+
+/* Remove mobile menu button */
+#navButton {
+    display: none !important;
+}
+
+/* Also prevent panel opening */
+#navPanel {
+    display: none !important;
+}
+/* Force horizontal swipe on mobile */
+.carousel .reel {
+    overflow-x: auto !important;
+    overflow-y: hidden !important;
+    -webkit-overflow-scrolling: touch;
+}
