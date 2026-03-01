@@ -3151,3 +3151,7 @@ input, select, textarea {
 					}
 
 	}
+/* Remove mobile menu button */
+#navPanelToggle {
+	display: none !important;
+}
