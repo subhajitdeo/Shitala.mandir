@@ -1,4 +1,4 @@
-// my code.
+(function($) {
 	var	$window = $(window),
 		$body = $('body'),
 		settings = {
@@ -178,5 +178,5 @@
 
 		});
 
-
 })(jQuery);
+
