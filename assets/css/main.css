@@ -3211,3 +3211,10 @@ section {
   padding-left: 16px;
   padding-right: 16px;
 }
+/*bla*/
+
+.carousel .reel {
+  overflow-x: auto;
+  overflow-y: hidden;
+  touch-action: pan-x pan-y; /* allows both directions */
+}
