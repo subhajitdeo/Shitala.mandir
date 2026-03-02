@@ -3154,3 +3154,18 @@ input, select, textarea {
 .carousel .reel::-webkit-scrollbar {
   display: none;
 }
+.carousel .reel {
+  overflow-x: auto;
+  overflow-y: hidden;
+
+  -webkit-overflow-scrolling: touch;
+  scroll-behavior: smooth;
+
+  touch-action: pan-y; /* KEY LINE */
+
+  scrollbar-width: none;
+}
+
+.carousel .reel::-webkit-scrollbar {
+  display: none;
+}
