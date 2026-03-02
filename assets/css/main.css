@@ -3154,6 +3154,8 @@ input, select, textarea {
 .carousel .reel::-webkit-scrollbar {
   display: none;
 }
+/*==== touch for up/down/left/right =====*/
+
 .carousel .reel {
   overflow-x: auto;
   overflow-y: hidden;
@@ -3168,4 +3170,44 @@ input, select, textarea {
 
 .carousel .reel::-webkit-scrollbar {
   display: none;
+}
+/* ===== UNIVERSAL RESPONSIVE FIX ===== */
+
+/* Prevent horizontal overflow */
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+/* Make images and videos responsive */
+img, video {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Make containers flexible */
+.container, .wrapper, .inner {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 16px;
+  box-sizing: border-box;
+}
+
+/* Flexible rows */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Flexible columns */
+[class*="col"] {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+/* Sections spacing fix */
+section {
+  padding-left: 16px;
+  padding-right: 16px;
 }
