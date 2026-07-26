@@ -16,8 +16,4 @@ This is a simple, devotional website dedicated to **Shitla Mandir**, showcasing 
 - CSS3  
 - JavaScript (optional for animations)  
 
-## How to Use
 
-1. Clone the repository:  
-   ```bash
-   git clone https://github.com/subhajitdeo/shitla.mandir.git
